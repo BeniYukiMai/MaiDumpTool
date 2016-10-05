@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changeinfo titleid="MAIM00001">
+  <changes app_ver="01.00">
+    <![CDATA[
+      <font size="1"><b>版本 [<font color="yellow">v233.0</font>]</b></font>
+      <ul>
+        <li>可提取并解密游戏和补丁（包括卡带版和数字版）</li>
+        <li>可单独提取补丁（包括卡带版和数字版）</li>
+        <li>可从文件夹直接安装游戏</li>
+        <li>可解密游戏自带 sce_module 并加载</li>
+        <li>可自动加载 ux0:plugins 所有插件</li>
+        <li>保留原始 eboot 为 mai_moe/eboot_origin.bin</li>
+        <li>暂不支持 grw 游戏</li>
+        <li>暂不支持一些稀有的加载 self 的游戏（神海什么的）</li>
+        <li>如果游戏无法正常运行的解决方法（两个中尝试）<br>
+            将eboot.bin换为mai_moe/eboot_origin.bin<br>
+            删掉sce_module/libc.suprx和sce_module/libfios2.suprx 带_m的两个保留</li>
+        <li>此版本不支持DLC 有可能下个版本会有（有可能会有下个版本！不一定）</li>
+        <li>安装时可以选择用工具从文件夹安装或者自行打包小VPK（因为打包速度太慢了2333333）</li>
+        <li>DUMP的时候 请保持不要锁屏 以免DUMP失败</li>
+      </ul>
+    ]]>
+  </changes>
+   <changes app_ver="01.01">
+    <![CDATA[
+      <font size="1"><b>版本 [<font color="yellow">v233.1</font>]</b></font>
+      <ul>
+        <li>可切换5种游戏加载方式（支持之前版本解密的游戏，游戏出错可以尝试切换）</li>
+        <li>支持解密一些会加载大数据段的游戏</li>
+        <li>修了几个bug</li>
+        <li>提取的游戏尽量保留原始文件 特别是mai_moe/eboot_origin.bin（这利于将来版本的工具直接使用）</li>
+      </ul>
+    ]]>
+  </changes>
+   <changes app_ver="02.02">
+    <![CDATA[
+      <font size="1"><b>版本 [<font color="yellow">v233.2z2</font>]</b></font>
+      <ul>
+        <li>支持提取DLC和加载DLC（需要加载DLC的游戏请设置加载方式为5）</li>
+        <li>DLC安装目录为ux0:addcont_mai，结构和ux0:addcont相同</li>
+        <li>支持解密自带self的游戏（神海之类）</li>
+        <li>支持解密自带suprx的游戏（EXVS之类）</li>
+        <li>支持解密self和suprx混合的游戏（吃神、FFX之类）（如果suprx过多你可能需要大量的时间和空间）</li>
+        <li>支持部分U3D游戏（xonic之类）</li>
+        <li>支持代码段为奇数的游戏</li>
+        <li>某些游戏会请求drm，如果不能运行可尝试设置加载方式为5</li>
+      </ul>
+    ]]>
+  </changes>
+   <changes app_ver="02.07">
+    <![CDATA[
+      <font size="1"><b>版本 [<font color="yellow">v233.2z7</font>]</b></font>
+      <ul>
+        <li>DLC安装目录改为 游戏目录/dlc，结构与ux0:addcont/xxxxyyyyy相同</li>
+        <li>DLC安装目录也可以继续使用ux0:addcont_mai，本工具启动时自动检测游戏DLC并移到新目录(当然前提是你至少要启动一次我)</li>
+        <li>支持从文件夹安装补丁（ux0:mai中文件夹形如xxxxyyyyy_patch）</li>
+        <li>支持从文件夹安装DLC（ux0:mai中文件夹形如xxxxyyyyy_addc）</li>
+        <li>支持GRW游戏</li>
+        <li>修复一些提取可能崩溃的bug</li>
+        <li>修复加载方式5可能读不到DLC的bug</li>
+      </ul>
+    ]]>
+  </changes>
+   <changes app_ver="02.08">
+    <![CDATA[
+      <font size="1"><b>版本 [<font color="yellow">v233.2z8</font>]</b></font>
+      <ul>
+        <li>修了个bug.............</li>
+      </ul>
+    ]]>
+  </changes>
+   <changes app_ver="02.09">
+    <![CDATA[
+      <font size="1"><b>版本 [<font color="yellow">v233.2z9</font>]</b></font>
+      <ul>
+        <li>dump时自动禁止待机（当然你要手动待机我没办法....）</li>
+        <li>游戏安装时自动扫描恶意代码</li>
+      </ul>
+    ]]>
+  </changes>
+   <changes app_ver="02.10">
+    <![CDATA[
+      <font size="1"><b>版本 [<font color="yellow">v233.2z10</font>]</b></font>
+      <ul>
+        <li>将2z2中加载方式5保留为加载方式6（dlc目录仍然是 游戏目录/dlc）</li>
+      </ul>
+    ]]>
+  </changes>
+</changeinfo>
